@@ -48,6 +48,7 @@ class InitCommand: FlockCommand {
         
         try write(contents: flockfileDefault(), to: Path.flockfile)
         
+        try createDirectory(at: Path.configDirectory)
         try createDirectory(at: Path.deployDirectory)
         
         try create(env: "base", defaults: baseDefaults())

@@ -44,7 +44,7 @@ extension FlockCommand {
             return
         }
         
-        try Path.flockDirectory.mkpath()
+        try Path.flockDirectory.mkdir()
         try Path.mainFile.symlink(Path("..") + Path.flockfile)
     }
     

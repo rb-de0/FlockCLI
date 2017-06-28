@@ -10,6 +10,7 @@ import PathKit
 
 extension Path {
     static let flockfile = Path("Flockfile.swift")
+    static let configDirectory = Path("config")
     static let deployDirectory = Path("config/deploy")
     static let flockPackageFile = deployDirectory + "FlockPackage.swift"
     
@@ -23,7 +24,7 @@ extension Path {
 
 func createDirectory(at path: Path) throws {
     log(action: "create", description: path.description)
-    try path.mkpath()
+    try path.mkdir()
 }
 
 func write(contents: String, to path: Path) throws {

@@ -1,4 +1,4 @@
-import Darwin
+import Foundation
 import SwiftCLI
 
 CLI.setup(name: "flock", version: "0.0.1")
