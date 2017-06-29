@@ -19,7 +19,7 @@ extension Path {
     static let mainFile = flockDirectory + "main.swift"
     
     static let buildDirectory = flockDirectory + ".build"
-    static let executable = buildDirectory + "debug/flockfile"
+    static let executable = buildDirectory + "debug/Flockfile"
 }
 
 func createDirectory(at path: Path) throws {
