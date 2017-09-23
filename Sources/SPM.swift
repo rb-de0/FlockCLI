@@ -77,7 +77,7 @@ class SPM {
         if inFlock {
             task.currentDirectoryPath = Path.flockDirectory.description
         }
-        task.arguments = ["swift"] + arguments + ["--chdir", Path.flockDirectory.description]
+        task.arguments = ["swift"] + arguments + ["--package-path", Path.flockDirectory.description]
         if silent {
             task.standardOutput = Pipe()
             task.standardError = Pipe()
